@@ -3,10 +3,12 @@ pipeline {
   stages {
       stage('Installation de make')
       {
-          steps {
+          steps { 
               sh 'apt-get install make -y'
+              sh 'yes'
           }
       }
+    
       stage('Compilation de push_swap')
       {
           steps {
