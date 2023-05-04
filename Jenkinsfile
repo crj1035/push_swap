@@ -4,7 +4,9 @@ pipeline {
       stage('Compilation de push_swap')
       {
           steps {
-              sh 'echo coucou'
+              sh 'bash docker avant'
+              sh 'sudo docker exec -ti jenkins bash'
+              sh 'bash docker avant'
               sh 'make push_swap'
           }
       }
