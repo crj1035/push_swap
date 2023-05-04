@@ -4,12 +4,14 @@ pipeline {
       stage('Compilation de push_swap')
       {
           steps {
+              export TERM=xterm
               sh 'make push_swap'       
           }
       }
       stage('Compilation de checker')
       {
           steps {
+              export TERM=xterm
               sh 'make checker'
           }
       }
