@@ -4,6 +4,7 @@ pipeline {
       stage('Compilation de push_swap')
       {
           steps {
+              sh 'echo coucou'
               sh 'make push_swap'
           }
       }
