@@ -4,7 +4,7 @@ pipeline {
       stage('Installation de make')
       {
           steps {
-              sh 'sudo apt-get install make -y'
+              sh 'apt-get install make -y'
           }
       }
       stage('Compilation de push_swap')
