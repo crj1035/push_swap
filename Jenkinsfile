@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Compilation du push_swap en C à l\'aide de make')
+    stage('Build')
     {
       steps {
-        sh 'make all'
+        sh 'make push_swap'
       }
     }
 //     stage('Compilation du checker en C à l\'aide de make')
