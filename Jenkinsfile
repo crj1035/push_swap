@@ -4,14 +4,14 @@ pipeline {
     stage('Compilation du push_swap en C à l\'aide de make')
     {
       steps {
-        sh 'make push_swap'
+        sh 'make all'
       }
     }
-    stage('Compilation du checker en C à l\'aide de make')
-    {
-      steps {
-        sh 'make checker'
-      }
-    }
+//     stage('Compilation du checker en C à l\'aide de make')
+//     {
+//       steps {
+//         sh 'make checker'
+//       }
+//     }
   }
 }
