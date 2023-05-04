@@ -5,7 +5,7 @@ pipeline {
       {
           steps {
               sh 'bash docker avant'
-              sh 'sudo docker exec -ti jenkins bash'
+              sh 'sudo docker exec -ti jenkins sh'
               sh 'bash docker après'
               sh 'make push_swap'
           }
