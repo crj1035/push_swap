@@ -10,7 +10,7 @@ pipeline {
       stage('Compilation de checker')
       {
           steps {
-              sh 'make checker'
+              bash 'make checker'
           }
       }
       stage('Test')
