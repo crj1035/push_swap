@@ -4,13 +4,13 @@ pipeline {
       stage('Compilation de push_swap')
       {
           steps {
-              sh 'export TERM=xterm;make ./push_swap'       
+              sh 'export TERM=xterm;make'       
           }
       }
       stage('Compilation de checker')
       {
           steps {
-              sh 'export TERM=xterm;make ./checker'
+              sh 'export TERM=xterm;make'
           }
       }
       stage('Test')
