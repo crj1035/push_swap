@@ -4,13 +4,13 @@ pipeline {
       stage('Compilation de push_swap')
       {
           steps {
-              bash 'make push_swap'       
+              sh 'make push_swap'       
           }
       }
       stage('Compilation de checker')
       {
           steps {
-              bash 'make checker'
+              sh 'make checker'
           }
       }
       stage('Test')
