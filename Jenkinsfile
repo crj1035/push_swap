@@ -1,14 +1,17 @@
 pipeline {
   agent any
   stages {
-      stage('Build')
+      stage('Installation de make')
       {
           steps {
               sh 'sudo apt-get install make -y'
           }
+      }
+      stage('Compilation de push_swap')
           steps {
               sh 'make push_swap'
           }
+      stage('Compilation de checker')
           steps {
               sh 'make checker'
           }
