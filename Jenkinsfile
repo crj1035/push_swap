@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-      stage('Compilation de push_swap')
+      stage('Nettoyage')
       {
           steps {
               sh 'export TERM=xterm;make clean'       
