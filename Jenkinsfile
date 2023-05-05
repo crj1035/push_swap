@@ -4,6 +4,12 @@ pipeline {
       stage('Compilation de push_swap')
       {
           steps {
+              sh 'export TERM=xterm;make clean'       
+          }
+      }
+      stage('Compilation de push_swap')
+      {
+          steps {
               sh 'export TERM=xterm;make push_swap'       
           }
       }
