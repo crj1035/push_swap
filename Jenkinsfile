@@ -25,5 +25,11 @@ pipeline {
               sh './push_swap 45 3 8 2 5 6 9 1 | ./checker 45 3 8 2 5 6 9 1'
           }
       }
+      stage('Test 2')
+      {
+          steps {
+              sh './push_swap 45 3 8 2 5 6 9 1 | ./checker 54 3 0 2 5 6 9 1'
+          }
+      }
    }
 }
